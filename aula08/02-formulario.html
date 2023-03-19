@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <meta charset="UTF-8"/>
+    <title>PHP Trainning</title>
+</head>
+<body>
+<div>
+<!--formulário com método GET com output de chamar arquivo PHP-->
+<form method="GET" id="fContato" action="02-idade.php">
+    <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+        <!--campos de formulário com inputs, labels são boa prática-->
+        <p><label for="cNome">Nome:</label>
+            <input type="text" name="tNome" id="cNome" size="30" maxlength="40" placeholder="Nome Completo"></p>
+        <p><label for="cNasc">Ano de Nascimento:</label>
+            <input type="number" name="tNasc" id="cNasc" size="4" maxlength="4" placeholder="19XX"></p>
+        <fieldset id="sexo"><legend>Sexo</legend><!--fieldset aninhado-->
+            <!--botões de radio com label-->
+            <input type="radio" name="tSexo" id="cMasc" value="homem" checked>
+            <label for="cMasc">Masculino</label></br>
+            <input type="radio" name="tSexo" id="cFem" value="mulher">
+            <label for="cFem">Feminino</label>
+        </fieldset>
+    </fieldset>
+    <input type="submit" name="tEnviar" value="Enviar"><!--botão Enviar-->
+</form>
+</div>
+</body>
+</html>
+ 

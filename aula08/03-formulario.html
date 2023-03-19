@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <meta charset="UTF-8"/>
+    <title>PHP Trainning</title>
+</head>
+<body>
+<div>
+<!--formulário com método GET com output de chamar arquivo PHP-->
+<form method="GET" id="fContato" action="03-cores.php">
+    <p><label for="itxt">Texto:</label>
+        <input type="text" name="txt" id="itxt"></p>
+    <p><label for="itam">Tamanho:</label>
+        <select name="tam" id="itam">
+            <option value="8pt">8/option> 
+            <option value="10pt">10</option>         
+            <option Value="14pt" selected>14</option><!--opção padrão-->
+            <option Value="20pt">20</option>
+            <option Value="40pt">40</option>
+    </select></p>
+    <label for="icor">Cor:</label>
+    <input type="color" name="cor" id="cor"></br>
+    <input type="submit" value="Gerar">
+</form>
+</div>
+</body>
+</html>
+ 
